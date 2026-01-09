@@ -36,6 +36,13 @@ VALUES ('10009', '20009', '2023-09-30', 1999.99);
 INSERT INTO cuentas (numero_cuenta, cedula_priopetario, fecha_creacion, saldo)
 VALUES ('10010', '20010', '2023-10-22', 725.00);
 
-select numero_cuenta,cedula_priopetario,fecha_creacion,saldo from cuentas
+select * from cuentas
+select * from cuentas where saldo::numeric > 0;
+select * from cuentas where fecha_creacion between (CURRENT_DATE - INTERVAL '2 months') AND CURRENT_DATE;
+select numero_cuenta,saldo from cuentas where fecha_creacion between (CURRENT_DATE - INTERVAL '2 months') AND CURRENT_DATE;
+
+
+
+
 
 

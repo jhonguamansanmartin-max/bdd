@@ -39,3 +39,8 @@ values('1109658745','Josue','Samaniego','paola.castillo88@mockmail.net'
 ,'2002/09/25')
 
 select * from estudiantes
+
+select cedula,nombre from estudiantes 
+select nombre from estudiantes where cedula like '17%'
+select nombre from estudiantes where nombre like 'A%'
+
