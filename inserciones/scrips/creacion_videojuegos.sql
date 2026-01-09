@@ -5,3 +5,13 @@ create table videojuegos(
 	valoracion int not null,
 	constraint videojuegos_pk primary key(codigo)
 )
+INSERT INTO videojuegos (codigo, nombre, valoracion)
+VALUES (1, 'The Legend of Code', 9);
+
+INSERT INTO videojuegos (codigo, nombre, valoracion)
+VALUES (2, 'Python Quest', 8);
+
+INSERT INTO videojuegos (codigo, nombre, valoracion)
+VALUES (3, 'SQL Warriors', 7);
+
+select * from videojuegos
